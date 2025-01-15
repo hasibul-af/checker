@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <base href="." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <title>UXLINK | Checker</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>UXLINK-Line | Invite Checker</h1>
+        <h3 style="color: rgb(14, 199, 153); text-align: center;">UXUY - Rewards Checker</h3>
+        <h5 style="color: skyblue (14, 199, 153); text-align: center;">The inviter will receive <strong>REWARDS</strong>
+            after the invited user completes tasks.</h5>
+        <div class="container">
+            <div class="box">
+                <h3>Invitees Account </h3>
+                <textarea id="userWorkData" placeholder="Enter user work data... example:
+
+                0x12...3456
+                0UXUY
+                0x12...6789
+                4UXUY"></textarea>
+
+            </div>
+            <div class="box">
+                <h3>Wallet Address</h3>
+                <textarea id="addressList" placeholder="Enter addresses... example:
+                
+                0xDd1fE47D105790AD034485816a68FeFACBCD5E70
+                0xb554FF0EF5287bc381C66eC2402c7a9Ec6060858
+                or
+                0x12...A789
+                0x12...B789
+                "></textarea>
+            </div>
+        </div>
+
+        <button onclick="checkData()">Check Rewards</button>
+
+        <div class="counts">
+            <div class="count-item">
+                Valid
+                <span id="correctCount">0</span>
+            </div>
+            <div class="count-item">
+                Invalid
+                <span id="incorrectCount">0</span>
+            </div>
+            <div class="count-item">
+                Not Found
+                <span id="notFoundCount">0</span>
+            </div>
+        </div>
+
+        <div class="results">
+
+            <div class="sheet">
+                <div class="sheet-title">Valid Rewards</div>
+                <div id="validData"></div>
+            </div>
+            <div class="sheet">
+                <div class="sheet-title">Invalid Rewards</div>
+                <div id="invalidData"></div>
+            </div>
+            <div class="sheet">
+                <div class="sheet-title">Not Found</div>
+                <div id="notFoundData"></div>
+            </div>
+        </div>
+
+        <footer>
+            ©2025 | Developed by <a class="advarten" target="_blank" href="https://advarten.com">ADVARTEN</a>
+        </footer>
+
+        <footer class="footover">
+            Version: 1.1.0
+
+
+    </div>
+</body>
+
+</html>
